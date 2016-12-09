@@ -59,7 +59,7 @@ class UserApi {
   static deleteUser(userId) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        const indexOfUserToDelete = user.findIndex(user => {
+        const indexOfUserToDelete = users.findIndex(user => {
           user.userId == userId;
         });
         users.splice(indexOfUserToDelete, 1);
